@@ -1,0 +1,61 @@
+:root {
+    --h1-size: 61px;
+    --h2-size: 49px;
+    --h3-size: 39px;
+    --h1-mobile-size: 30px;
+    --h2-mobile-size: 24px;
+    --subtitle-size:20px;
+    --body-m-size:16px;
+    --body-s-size:14px;
+    --body-xs-size:12px;
+    --Background-primary: #FFFFFF;
+    --Background-secondary: #0E0E12;
+    --Text-illustration-header: #D8D8DB;
+    --text-primary: #010205;
+    --text-secondary: #6B6D70;
+    --text-inverse: #FBFCFF;
+    --Card-fill: #EEEFF2;
+    --Card-stroke: #D8D8DB;
+    --hover-black-bg: #18181E;
+    /*TODO Variable gradiant*/
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+body{
+    background-color: var(--Background-primary);
+    color: var(--text-primary);
+    font-size: var(--body-m-size);
+}
+h1{
+    font-size: var(--h1-size);
+}
+h2{
+    font-size: var(--h2-size);
+}
+h3{
+    font-size: var(--h3-size);
+}
+
+.brand-name{
+    font-size: var(--h1-size);
+}
+
+.features-list{
+    overflow: hidden;
+    display: flex;
+    gap: 24px;
+}
+.features-list img{
+
+}
