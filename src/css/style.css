@@ -60,6 +60,7 @@
     --gap-secondary: 24px;
     --gap-main: 16px;
     --gap-tiny: 8px;
+    --gap-heigt-button: 12px;
 
     --card-radius: 16px;
     --button-radius: 4px;
@@ -169,9 +170,13 @@ header nav{
     width: 100%;
     padding-left: var(--gap-secondary);
 }
+
+/*todo*/
+/*425px max*/
 .nav-collections{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: var(--gap-main);
     overflow-x: auto;
 }
@@ -327,6 +332,12 @@ main{
 }
 #craft-list{
     background: var(--gradiant-net-transition-bg);
+}
+
+
+
+#features-heading{
+    text-align: center;
 }
 .features-list, .find-list{
     display: flex;
@@ -491,7 +502,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     padding: var(--gap-large);
@@ -553,15 +566,18 @@ main{
 
 
 
+/*todo*/
+/*button not 100% width*/
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: var(--gap-tiny);
     width: 100%;
-    height: var(--button-height-mobile);
+    min-height: var(--button-height-mobile);
     border-radius: var(--button-radius);
     text-decoration: none;
+    padding: var(--gap-heigt-button) var(--gap-secondary);
 }
 .button-primary{
     color: var(--text-inverse);
