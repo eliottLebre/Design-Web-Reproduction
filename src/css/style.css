@@ -256,6 +256,7 @@ main{
 }
 .philosophy-main-image{
     border-radius: var(--medium-radius);
+    overflow: hidden;
     width: 100%;
     height: auto;
 }
@@ -268,6 +269,8 @@ main{
     width: 60%;
     height: auto;
     position: absolute;
+    max-width: 100vw; /* Ne dépasse jamais la largeur de la fenêtre */
+    overflow: hidden;
     top: 24px;
     left: 0;
 }
@@ -276,6 +279,8 @@ main{
     height: 12.5em;
     object-fit: cover;
     position: absolute;
+    max-width: 100vw; /* Ne dépasse jamais la largeur de la fenêtre */
+    overflow: hidden;
     bottom: 0;
     right: 0;
 }
@@ -397,6 +402,7 @@ main{
     padding: 0 var(--gap-secondary);
     display: flex;
     gap: var(--gap-main);
+    width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
