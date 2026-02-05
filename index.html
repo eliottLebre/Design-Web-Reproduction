@@ -88,40 +88,44 @@
 
             <section aria-labelledby="specs-heading" class="specs">
                 <h2 id="specs-heading" class="visually-hidden">Détails techniques</h2>
-                <dl class="specs-list">
-                    <div class="spec-item">
-                        <dt>Épaisseur du boîtier</dt>
-                        <dd>
-                            <strong>9,5</strong>
-                            <abbr title="millimètres">mm</abbr>
-                        </dd>
-                    </div>
+                <div class="spec-container second-spacer-desktop">
+                    <dl class="specs-list">
+                        <div class="spec-item">
+                            <dt>Épaisseur du boîtier</dt>
+                            <dd>
+                                <strong>9,5</strong>
+                                <abbr title="millimètres">mm</abbr>
+                            </dd>
+                        </div>
 
-                    <div class="spec-item">
-                        <dt>Taille du boîtier</dt>
-                        <dd>
-                            <strong>41</strong>
-                            <abbr title="millimètres">mm</abbr>
-                        </dd>
-                    </div>
+                        <div class="spec-item">
+                            <dt>Taille du boîtier</dt>
+                            <dd>
+                                <strong>41</strong>
+                                <abbr title="millimètres">mm</abbr>
+                            </dd>
+                        </div>
 
-                    <div class="spec-item">
-                        <dt>Profondeur maximale de l'étanchéité</dt>
-                        <dd>
-                            <strong>20</strong>
-                            <abbr title="mètres">m</abbr>
-                        </dd>
-                    </div>
-                </dl>
+                        <div class="spec-item">
+                            <dt>Profondeur maximale de l'étanchéité</dt>
+                            <dd>
+                                <strong>20</strong>
+                                <abbr title="mètres">m</abbr>
+                            </dd>
+                        </div>
+                    </dl>
 
-                <img src="./src/img/desktop/Tous%20les%20détails%20techniques-desktop.webp" alt="" width="654"
-                     height="492" loading="lazy" decoding="async">
+                    <img src="./src/img/desktop/Tous%20les%20détails%20techniques-desktop.webp" alt="" width="654"
+                         height="492" loading="lazy" decoding="async">
+                </div>
 
-                <a class="button button-secondary"
-                   href="https://www.audemarspiguet.com/content/dam/ap/com/digital-user-guide/5134/col_017/index.html">Tous
-                    les détails techniques
-                    <span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
-                </a>
+                <div class="second-spacer-desktop">
+                    <a class="button button-secondary"
+                       href="https://www.audemarspiguet.com/content/dam/ap/com/digital-user-guide/5134/col_017/index.html">Tous
+                        les détails techniques
+                        <span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
+                    </a>
+                </div>
             </section>
         </section>
 
@@ -382,17 +386,19 @@
             <p>Le Calibre 4302 est un mouvement automatique de nouvelle génération qui allie performance technique,
                 précision et finitions raffinées.</p>
         </div>
-        <ul class="horizontal-list">
+        <ul id="horizontal-spec">
             <li>
                 <div class="spec-card card">
                     <img src="./src/img/desktop/calibre%205134%20desktop.webp" alt="Calibre 4302" width="960"
                          height="600"
                          loading="lazy" decoding="async">
-                    <h3>Calibre 5134.</h3>
-                    <p>Une mécanique d'exception animée par l'or. Ce mouvement à remontage automatique se distingue
-                        par
-                        sa masse oscillante en or rose 22 carats dédiée, véritable signature visuelle qui allie
-                        efficacité cinétique et raffinement exclusif.</p>
+                    <div class="spec-content">
+                        <h3>Calibre 5134.</h3>
+                        <p>Une mécanique d'exception animée par l'or. Ce mouvement à remontage automatique se distingue
+                            par
+                            sa masse oscillante en or rose 22 carats dédiée, véritable signature visuelle qui allie
+                            efficacité cinétique et raffinement exclusif.</p>
+                    </div>
                 </div>
             </li>
 
@@ -401,10 +407,12 @@
                     <img src="./src/img/desktop/remontage-automatique-desktop.webp" alt="Mécanisme de remontage"
                          width="800" height="600"
                          loading="lazy" decoding="async">
-                    <h3>Remontage Automatique.</h3>
-                    <p>Une fusion parfaite entre l’homme et la mécanique. L’énergie cinétique de chaque geste arme
-                        naturellement le calibre, lui insufflant une puissance constante et une autonomie sans
-                        faille.</p>
+                    <div class="spec-content">
+                        <h3>Remontage Automatique.</h3>
+                        <p>Une fusion parfaite entre l’homme et la mécanique. L’énergie cinétique de chaque geste arme
+                            naturellement le calibre, lui insufflant une puissance constante et une autonomie sans
+                            faille.</p>
+                    </div>
                 </div>
             </li>
 
@@ -413,10 +421,12 @@
                     <img src="./src/img/desktop/frequence-desktop.webp" alt="Balancier en mouvement" width="800"
                          height="600"
                          loading="lazy" decoding="async">
-                    <h3>Fréquence.</h3>
-                    <p>Un cœur battant à la cadence de 28 800 alternances par heure (4 Hz). Ce rythme soutenu assure
-                        une
-                        stabilité de marche exemplaire et garantit une précision chronométrique de haut vol.</p>
+                    <div class="spec-content">
+                        <h3>Fréquence.</h3>
+                        <p>Un cœur battant à la cadence de 28 800 alternances par heure (4 Hz). Ce rythme soutenu assure
+                            une
+                            stabilité de marche exemplaire et garantit une précision chronométrique de haut vol.</p>
+                    </div>
                 </div>
             </li>
 
@@ -424,11 +434,13 @@
                 <div class="spec-card card">
                     <img src="./src/img/desktop/angle-main-desktop.webp" alt="Anglage main" width="900" height="600"
                          loading="lazy" decoding="async">
-                    <h3>Anglage Main.</h3>
-                    <p> La signature de la Haute Horlogerie. Méticuleusement biseautée et polie à la main, chaque
-                        arête
-                        révèle un éclat miroir. Ce filet de lumière sculpte les contours du mouvement, offrant un
-                        contraste saisissant avec les surfaces satinées.</p>
+                    <div class="spec-content">
+                        <h3>Anglage Main.</h3>
+                        <p> La signature de la Haute Horlogerie. Méticuleusement biseautée et polie à la main, chaque
+                            arête
+                            révèle un éclat miroir. Ce filet de lumière sculpte les contours du mouvement, offrant un
+                            contraste saisissant avec les surfaces satinées.</p>
+                    </div>
                 </div>
             </li>
 
@@ -437,11 +449,13 @@
                     <img src="./src/img/desktop/32-rubis-desktop.webp" alt="Rubis synthétiques" width="900"
                          height="600"
                          loading="lazy" decoding="async">
-                    <h3>32 Rubis.</h3>
-                    <p>Gages de pérennité, 32 rubis assurent une fluidité mécanique absolue. En minimisant les
-                        frictions
-                        au cœur du mouvement, ils préservent l'intégrité du calibre pour offrir une performance
-                        inaltérable à travers le temps.</p>
+                    <div class="spec-content">
+                        <h3>32 Rubis.</h3>
+                        <p>Gages de pérennité, 32 rubis assurent une fluidité mécanique absolue. En minimisant les
+                            frictions
+                            au cœur du mouvement, ils préservent l'intégrité du calibre pour offrir une performance
+                            inaltérable à travers le temps.</p>
+                    </div>
                 </div>
             </li>
 
@@ -450,12 +464,14 @@
                     <img src="./src/img/desktop/masse-oscillante-desktop.webp" alt="Masse oscillante squelettée"
                          width="600"
                          height="600" loading="lazy" decoding="async">
-                    <h3>Masse Oscillante.</h3>
-                    <p>Sculptée dans l’or 22 carats, cette masse oscillante arbore une architecture finement
-                        ajourée. Ce
-                        design aérien dévoile, par jeu de transparence, toute la profondeur et la beauté du
-                        mécanisme
-                        sous-jacent.</p>
+                    <div class="spec-content">
+                        <h3>Masse Oscillante.</h3>
+                        <p>Sculptée dans l’or 22 carats, cette masse oscillante arbore une architecture finement
+                            ajourée. Ce
+                            design aérien dévoile, par jeu de transparence, toute la profondeur et la beauté du
+                            mécanisme
+                            sous-jacent.</p>
+                    </div>
                 </div>
             </li>
 
@@ -465,10 +481,12 @@
                          width="600"
                          height="600"
                          loading="lazy" decoding="async">
-                    <h3>Boucle Déployante.</h3>
-                    <p>Signée des initiales AP, cette boucle conjugue confort et sérénité. Son mécanisme à double
-                        sécurité assure un maintien infaillible, scellant précieusement le garde-temps au poignet
-                        quelles que soient les circonstances.</p>
+                    <div class="spec-content">
+                        <h3>Boucle Déployante.</h3>
+                        <p>Signée des initiales AP, cette boucle conjugue confort et sérénité. Son mécanisme à double
+                            sécurité assure un maintien infaillible, scellant précieusement le garde-temps au poignet
+                            quelles que soient les circonstances.</p>
+                    </div>
                 </div>
             </li>
 
@@ -477,10 +495,12 @@
                     <img src="./src/img/desktop/couronne-vissee-desktop.webp" alt="Couronne vissée" width="900"
                          height="600"
                          loading="lazy" decoding="async">
-                    <h3>Couronne Vissée.</h3>
-                    <p>Écho esthétique aux vis de la lunette, la couronne hexagonale allie signature visuelle et
-                        sécurité technique. En verrouillant hermétiquement le boîtier, elle garantit une étanchéité
-                        jusqu’à 50 mètres, offrant une protection absolue au cœur du garde-temps.</p>
+                    <div class="spec-content">
+                        <h3>Couronne Vissée.</h3>
+                        <p>Écho esthétique aux vis de la lunette, la couronne hexagonale allie signature visuelle et
+                            sécurité technique. En verrouillant hermétiquement le boîtier, elle garantit une étanchéité
+                            jusqu’à 50 mètres, offrant une protection absolue au cœur du garde-temps.</p>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -490,7 +510,7 @@
             <h2 id="related-heading">Collections Connexes.</h2>
             <p>Les montres du même style que vous devriez apprécier</p>
         </div>
-        <ul class="horizontal-list">
+        <ul class="horizontal-list horizontal-list-justify">
             <li>
                 <article aria-labelledby="rel-1" class="watch-card card">
                     <img src="./src/img/desktop/quantieme-Perpetuel-desktop.webp" alt="Quantième Perpétuel"
