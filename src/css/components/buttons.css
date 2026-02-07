@@ -1,0 +1,82 @@
+/*todo*/
+/*button not 100% width*/
+
+
+/*todo*/
+@media screen and (min-width: 1200px) {
+
+    .button {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-button-inner-padding);
+        min-height: var(--button-min-height);
+        border-radius: var(--button-radius);
+        text-decoration: none;
+        padding: var(--space-button-group) var(--space-s);
+    }
+
+    .buttons-group {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-xs);
+    }
+
+    .button + .button {
+        margin-top: 0 !important;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--space-xs);
+    min-height: var(--button-min-height);
+    border-radius: var(--button-radius);
+    text-decoration: none;
+    padding: var(--space-button-group) var(--space-s);
+}
+
+.button-primary {
+    color: var(--text-inverse);
+    background-color: var(--Background-secondary);
+    border: var(--button-border-size) solid var(--text-primary);
+}
+
+.button-secondary {
+    color: var(--text-primary);
+    background-color: transparent;
+    border: var(--button-border-size) solid var(--Background-secondary);
+}
+
+.button-inverse {
+    color: var(--text-inverse);
+    background-color: transparent;
+    border: var(--button-border-size) solid var(--text-inverse);
+}
+
+.button-primary-inverse, .button-primary-inverse-social {
+    color: var(--text-primary);
+    background-color: var(--Background-primary);
+    border: var(--button-border-size) solid var(--Background-secondary);
+}
+
+.button-primary-inverse-social {
+    width: 56px;
+}
+
+.button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons-group {
+    width: 100%;
+}
+
+.button + .button {
+    margin-top: var(--space-xs);
+}

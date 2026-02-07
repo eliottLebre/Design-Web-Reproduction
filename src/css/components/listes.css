@@ -1,0 +1,33 @@
+.horizontal-list {
+    margin: 0;
+    padding: 0 var(--space-centred);
+    display: flex;
+    gap: var(--space-s);
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.horizontal-list > :first-child {
+    margin-left: auto;
+}
+
+.horizontal-list > :last-child {
+    margin-right: auto;
+}
+
+#horizontal-spec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: var(--space-s);
+    width: 100vw;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-left: var(--space-centred-second);
+}
+
+#horizontal-spec li {
+    width: 100%;
+    scroll-snap-align: center;
+}

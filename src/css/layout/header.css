@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav {
+    align-self: flex-start;
+    width: 100%;
+    padding-left: var(--space-s);
+}
+
+.second-spacer-desktop {
+    padding: 0 var(--space-centred-second);
+}
+
+header {
+    margin-top: 72px;
+    margin-bottom: var(--space-xs);
+}
+
+/*todo*/
+/*425px max*/
+.nav-collections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-xs);
+    overflow-x: auto;
+}
+
+.nav-collections a {
+    white-space: nowrap;
+}
