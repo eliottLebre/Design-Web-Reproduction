@@ -1,0 +1,14 @@
+/*SKIP LINKS*/
+.skip-links__link {
+  position: absolute;
+  top: -9999px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--Background-secondary);
+  color: var(--text-inverse);
+  padding: var(--space-s);
+  z-index: 9999;
+  &:focus{
+    top: 0; /* Apparaît quand on tab dessus */
+  }
+}

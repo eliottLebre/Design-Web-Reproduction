@@ -12,35 +12,39 @@
 </head>
 <body>
 
-<nav aria-label="Accès rapide">
-    <a class="skip-link" href="#main-content">
+<nav class="skip-links" aria-label="Accès rapide">
+    <a class="skip-links__link" href="#main-content">
         Aller au contenu principal
     </a>
 </nav>
 
-<header>
-    <p class="brand-name">Royal Oak</p>
-    <div id="gradiant-header">
-        <img src="./src/img/desktop/main-desktop.webp" alt="Vue de face de la Royal Oak Automatique cadran bleu"
+<header class="header">
+    <p class="header__brand-name">Royal Oak</p>
+    <div id="header__container-img">
+        <img class="header__container-img__img" src="src/assets/img/desktop/main-desktop.webp"
+             alt="Vue de face de la Royal Oak Automatique cadran bleu"
              width="320"
              height="427" fetchpriority="high">
     </div>
-    <nav aria-label="Navigation principale des collections">
-        <ul class="nav-collections">
+    <nav class="header__nav" aria-label="Navigation principale des collections">
+        <ul class="header__nav__links">
             <li>
-                <a href="https://www.audemarspiguet.com/com/fr/watch-collection.html?view=core-collection&collection=COL_017%2CCOL_019%2CCOL_018"
+                <a class="header__nav__links__link"
+                   href="https://www.audemarspiguet.com/com/fr/watch-collection.html?view=core-collection&collection=COL_017%2CCOL_019%2CCOL_018"
                    target="_blank" rel="noopener noreferrer" hreflang="fr">Collection Actuelle
                     <span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.audemarspiguet.com/com/fr/watch-collection.html?view=legacy&collection=COL_017%2CCOL_019%2CCOL_018"
+                <a class="header__nav__links__link"
+                   href="https://www.audemarspiguet.com/com/fr/watch-collection.html?view=legacy&collection=COL_017%2CCOL_019%2CCOL_018"
                    target="_blank" rel="noopener noreferrer" hreflang="fr">Montres Héritage
                     <span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.audemarspiguet.com/com/fr/watch-collection.html?view=special&collection=COL_017%2CCOL_019%2CCOL_018"
+                <a class="header__nav__links__link"
+                   href="https://www.audemarspiguet.com/com/fr/watch-collection.html?view=special&collection=COL_017%2CCOL_019%2CCOL_018"
                    target="_blank" rel="noopener noreferrer" hreflang="fr">Editions Spéciales
                     <span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
                 </a>
@@ -49,7 +53,7 @@
     </nav>
 </header>
 
-<main id="main-content" itemscope itemtype="https://schema.org/Product">
+<main class="main" id="main-content" itemscope itemtype="https://schema.org/Product">
 
     <meta itemprop="brand" content="Audemars Piguet">
     <meta itemprop="name" content="Royal Oak Quantième Perpétuel">
@@ -57,13 +61,14 @@
           content="Découvrez la Royal Oak Quantième Perpétuel (Ref. 26574TI). Une montre d'exception en titane de 41 mm, dotée du Calibre 5134 extra-plat et d'un cadran Grande Tapisserie. Disponible exclusivement en boutique Audemars Piguet.">
     <link itemprop="availability" href="https://schema.org/InStoreOnly">
 
-    <div class="spacer">
-        <section aria-labelledby="title-model" class="model">
-            <h1 id="title-model">Quantième Perpétuel</h1>
+    <div class="main__wrapper">
+        <section class="main__wrapper__section-about" aria-labelledby="title-model">
+            <h1 class="main__wrapper__section-about__h1" id="title-model">Quantième Perpétuel</h1>
 
-            <p>Ref.&nbsp;<span itemprop="sku">26574TI.OO.1220TI.01</span></p>
+            <p class="main__wrapper__section-about__p-refercence">Ref.&nbsp;<span
+                    itemprop="sku">26574TI.OO.1220TI.01</span></p>
             <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                <p class="price">
+                <p class="main__wrapper__section-about__p-price">
                     <strong>
                         <span itemprop="price" content="95200">95&nbsp;200</span>&nbsp;
                         <span itemprop="priceCurrency" content="CHF">CHF</span>
@@ -71,13 +76,14 @@
                     </strong>
                 </p>
             </div>
-            <div class="buttons-group second-spacer-desktop">
-                <a class="button button-primary"
+            <div class="main__wrapper__section-about__container-buttons">
+                <a class="main__wrapper__section-about__container-buttons__button main__wrapper__section-about__container-buttons__button--primary"
                    href="https://www.audemarspiguet.com/com/fr/watch-collection.html?view=core-collection&collection=COL_017%2CCOL_019%2CCOL_018"
                    target="_blank" rel="noopener noreferrer" hreflang="fr">Changer de modèle
                     <span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
                 </a>
-                <a class="button button-secondary" href="https://www.audemarspiguet.com/com/en/stores.html"
+                <a class="main__wrapper__section-about__container-buttons__button main__wrapper__section-about__container-buttons__button--secondary"
+                   href="https://www.audemarspiguet.com/com/en/stores.html"
                    target="_blank"
                    rel="noopener noreferrer"
                    hreflang="fr">Explorer
@@ -85,8 +91,10 @@
                     <span class="visually-hidden">(s'ouvre dans un nouvel onglet)</span>
                 </a>
             </div>
-            <p class="secondary-p small">Boîte en titane, glace et fond saphir avec traitement anti-reflets.</p>
-
+            <p class="main__wrapper__section-about__p-small main__wrapper__section-about__p-small--secondary main__wrapper__section-about__p-small--small">
+                Boîte en titane, glace et fond saphir avec traitement anti-reflets.</p>
+            <!--todo-->
+            <!--            BEM & SCSS-->
             <section aria-labelledby="specs-heading" class="specs">
                 <h2 id="specs-heading" class="visually-hidden">Détails techniques</h2>
                 <div class="spec-container second-spacer-desktop">
@@ -116,7 +124,7 @@
                         </div>
                     </dl>
 
-                    <img src="./src/img/desktop/Tous%20les%20détails%20techniques-desktop.webp" alt="" width="654"
+                    <img src="src/assets/img/desktop/Tous%20les%20détails%20techniques-desktop.webp" alt="" width="654"
                          height="492" loading="lazy" decoding="async">
                 </div>
 
@@ -136,7 +144,7 @@
                 <div class="invert-flex-column">
                     <h2 id="philosophy-heading">Pour briser les règles, il faut d'abord les maîtriser.</h2>
                     <img class="philosophy-main-image" itemprop="image"
-                         src="./src/img/desktop/briser-les%20regles-desktop.webp" alt="" width="1580"
+                         src="src/assets/img/desktop/briser-les%20regles-desktop.webp" alt="" width="1580"
                          height="1054" loading="lazy" decoding="async">
                 </div>
 
@@ -147,9 +155,11 @@
             </div>
             <div id="philosophy-img-scroll-effect">
                 <img id="philosophy-img-scroll-effect-1"
-                     src="./src/img/desktop/briser%20les%20regles%20decoratif%202%20desktop.webp" alt="" width="800"
+                     src="src/assets/img/desktop/briser%20les%20regles%20decoratif%202%20desktop.webp" alt=""
+                     width="800"
                      height="533" loading="lazy" decoding="async">
-                <img src="./src/img/desktop/briser%20les%20regles%20decoratif%201%20desktop.webp" alt="" width="1000"
+                <img src="src/assets/img/desktop/briser%20les%20regles%20decoratif%201%20desktop.webp" alt=""
+                     width="1000"
                      height="1000" loading="lazy" decoding="async">
             </div>
         </section>
@@ -162,7 +172,7 @@
         <ul class="horizontal-list">
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/revolution-esthetique-desktop-large.webp"
+                    <img src="src/assets/img/desktop/revolution-esthetique-desktop-large.webp"
                          alt="Croquis original de Gérald Genta" width="1580"
                          height="1054" loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -177,7 +187,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Lunette%20Octogonale%20desktop.webp"
+                    <img src="src/assets/img/desktop/Lunette%20Octogonale%20desktop.webp"
                          alt="Gros plan sur la lunette octogonale" width="900"
                          height="600" loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -192,7 +202,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/grande-tapisserie-desktop.webp"
+                    <img src="src/assets/img/desktop/grande-tapisserie-desktop.webp"
                          alt="Motif Grande Tapisserie du cadran" width="600"
                          height="600" loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -207,7 +217,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Calibre%20Manufacture%20desktop.webp"
+                    <img src="src/assets/img/desktop/Calibre%20Manufacture%20desktop.webp"
                          alt="Maillons du bracelet intégré" width="901"
                          height="600" loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -221,7 +231,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Bracelet%20Intégré%20desktop.webp" alt="Masse oscillante en or"
+                    <img src="src/assets/img/desktop/Bracelet%20Intégré%20desktop.webp" alt="Masse oscillante en or"
                          width="1055" height="600"
                          loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -238,7 +248,7 @@
 
     <section aria-labelledby="craft-heading">
         <div class="full-size-img">
-            <img src="./src/img/desktop/savoir-faire-desktop.webp" alt="royal oak" width="1580"
+            <img src="src/assets/img/desktop/savoir-faire-desktop.webp" alt="royal oak" width="1580"
                  height="1054"
                  loading="lazy" decoding="async">
         </div>
@@ -259,7 +269,7 @@
         <ul class="horizontal-list" id="craft-list">
             <li>
                 <div class="feature-card card" id="finishes">
-                    <img src="./src/img/desktop/grande-tapisserie-desktop.webp" alt="Détail du guillochage"
+                    <img src="src/assets/img/desktop/grande-tapisserie-desktop.webp" alt="Détail du guillochage"
                          width="600"
                          height="600"
                          loading="lazy" decoding="async">
@@ -274,7 +284,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Alternance%20des%20finitions%20desktop.webp"
+                    <img src="src/assets/img/desktop/Alternance%20des%20finitions%20desktop.webp"
                          alt="Vis hexagonales en or blanc" width="897"
                          height="600" loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -288,7 +298,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Architecture%20complexe%20desktop.webp"
+                    <img src="src/assets/img/desktop/Architecture%20complexe%20desktop.webp"
                          alt="Fond saphir de la montre"
                          width="900"
                          height="600" loading="lazy" decoding="async">
@@ -303,7 +313,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Vis%20Hexagonales%20desktop.webp" alt="Alternance poli-satiné"
+                    <img src="src/assets/img/desktop/Vis%20Hexagonales%20desktop.webp" alt="Alternance poli-satiné"
                          width="1067" height="600"
                          loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -317,7 +327,7 @@
 
             <li>
                 <div class="feature-card card" id="materials">
-                    <img src="./src/img/desktop/Fond%20Saphir%20desktop.webp" alt="Architecture du boîtier"
+                    <img src="src/assets/img/desktop/Fond%20Saphir%20desktop.webp" alt="Architecture du boîtier"
                          width="480"
                          height="600" loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -331,7 +341,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Verre%20Saphir%20desktop.webp" alt="Acier inoxydable" width="800"
+                    <img src="src/assets/img/desktop/Verre%20Saphir%20desktop.webp" alt="Acier inoxydable" width="800"
                          height="600"
                          loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -346,7 +356,7 @@
 
             <li>
                 <div class="feature-card card">
-                    <img src="./src/img/desktop/Acier%20Inoxydable%20desktop.webp" alt="Verre saphir" width="400"
+                    <img src="src/assets/img/desktop/Acier%20Inoxydable%20desktop.webp" alt="Verre saphir" width="400"
                          height="600"
                          loading="lazy" decoding="async">
                     <div class="feature-content card-content">
@@ -368,7 +378,7 @@
 
     <section aria-labelledby="complications-heading">
         <div class="full-size-img">
-            <img src="./src/img/desktop/compliquation-desktop.webp" alt="royal oak" width="1580"
+            <img src="src/assets/img/desktop/compliquation-desktop.webp" alt="royal oak" width="1580"
                  height="1054"
                  loading="lazy" decoding="async">
         </div>
@@ -390,7 +400,7 @@
         <ul id="horizontal-spec">
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/calibre%205134%20desktop.webp" alt="Calibre 4302" width="960"
+                    <img src="src/assets/img/desktop/calibre%205134%20desktop.webp" alt="Calibre 4302" width="960"
                          height="600"
                          loading="lazy" decoding="async">
                     <div class="spec-content">
@@ -405,7 +415,7 @@
 
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/remontage-automatique-desktop.webp" alt="Mécanisme de remontage"
+                    <img src="src/assets/img/desktop/remontage-automatique-desktop.webp" alt="Mécanisme de remontage"
                          width="800" height="600"
                          loading="lazy" decoding="async">
                     <div class="spec-content">
@@ -419,7 +429,7 @@
 
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/frequence-desktop.webp" alt="Balancier en mouvement" width="800"
+                    <img src="src/assets/img/desktop/frequence-desktop.webp" alt="Balancier en mouvement" width="800"
                          height="600"
                          loading="lazy" decoding="async">
                     <div class="spec-content">
@@ -433,7 +443,8 @@
 
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/angle-main-desktop.webp" alt="Anglage main" width="900" height="600"
+                    <img src="src/assets/img/desktop/angle-main-desktop.webp" alt="Anglage main" width="900"
+                         height="600"
                          loading="lazy" decoding="async">
                     <div class="spec-content">
                         <h3>Anglage Main.</h3>
@@ -447,7 +458,7 @@
 
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/32-rubis-desktop.webp" alt="Rubis synthétiques" width="900"
+                    <img src="src/assets/img/desktop/32-rubis-desktop.webp" alt="Rubis synthétiques" width="900"
                          height="600"
                          loading="lazy" decoding="async">
                     <div class="spec-content">
@@ -462,7 +473,7 @@
 
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/masse-oscillante-desktop.webp" alt="Masse oscillante squelettée"
+                    <img src="src/assets/img/desktop/masse-oscillante-desktop.webp" alt="Masse oscillante squelettée"
                          width="600"
                          height="600" loading="lazy" decoding="async">
                     <div class="spec-content">
@@ -478,7 +489,7 @@
 
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/boucle-deployante-desktop.webp" alt="Boucle déployante AP"
+                    <img src="src/assets/img/desktop/boucle-deployante-desktop.webp" alt="Boucle déployante AP"
                          width="600"
                          height="600"
                          loading="lazy" decoding="async">
@@ -493,7 +504,7 @@
 
             <li>
                 <div class="spec-card card">
-                    <img src="./src/img/desktop/couronne-vissee-desktop.webp" alt="Couronne vissée" width="900"
+                    <img src="src/assets/img/desktop/couronne-vissee-desktop.webp" alt="Couronne vissée" width="900"
                          height="600"
                          loading="lazy" decoding="async">
                     <div class="spec-content">
@@ -514,7 +525,7 @@
         <ul class="horizontal-list">
             <li>
                 <article aria-labelledby="rel-1" class="watch-card card">
-                    <img src="./src/img/desktop/quantieme-Perpetuel-desktop.webp" alt="Quantième Perpétuel"
+                    <img src="src/assets/img/desktop/quantieme-Perpetuel-desktop.webp" alt="Quantième Perpétuel"
                          width="258"
                          height="350"
                          loading="lazy" decoding="async">
@@ -533,7 +544,7 @@
             </li>
             <li>
                 <article aria-labelledby="rel-2" class="watch-card card">
-                    <img src="./src/img/desktop/quantieme-Perpetuel-150-desktop.webp"
+                    <img src="src/assets/img/desktop/quantieme-Perpetuel-150-desktop.webp"
                          alt="Quantième Perpétuel « 150e Anniversaire »"
                          width="258"
                          height="350"
@@ -554,7 +565,7 @@
     </section>
     <section aria-labelledby="history-heading" id="history-card">
         <div class="cover-size-img">
-            <img src="./src/img/desktop/revolution-esthetique-desktop-large.webp" alt="royal oak"
+            <img src="src/assets/img/desktop/revolution-esthetique-desktop-large.webp" alt="royal oak"
                  width="1580" height="1054"
                  loading="lazy" decoding="async">
         </div>
@@ -582,7 +593,7 @@
         <ul class="horizontal-list">
             <li>
                 <article aria-labelledby="choice-1" class="watch-card card">
-                    <img src="./src/img/desktop/grand-complication-desktop.webp" alt="grand complication"
+                    <img src="src/assets/img/desktop/grand-complication-desktop.webp" alt="grand complication"
                          width="258"
                          height="350"
                          loading="lazy" decoding="async">
@@ -600,7 +611,7 @@
             </li>
             <li>
                 <article aria-labelledby="choice-2" class="watch-card card">
-                    <img src="./src/img/desktop/tourbillon-volant-automatique-desktop.webp"
+                    <img src="src/assets/img/desktop/tourbillon-volant-automatique-desktop.webp"
                          alt="tourbillon volant automatique" width="258"
                          height="350"
                          loading="lazy" decoding="async">
@@ -618,7 +629,7 @@
             </li>
             <li>
                 <article aria-labelledby="choice-3" class="watch-card card">
-                    <img src="./src/img/desktop/tourbillon-volant-automatique-squelette-desktop.webp"
+                    <img src="src/assets/img/desktop/tourbillon-volant-automatique-squelette-desktop.webp"
                          alt="tourbillon volant automatique squelette"
                          width="258"
                          height="350"
@@ -637,7 +648,7 @@
             </li>
             <li>
                 <article aria-labelledby="choice-4" class="watch-card card">
-                    <img src="./src/img/desktop/chronographe-automatique-desktop.webp"
+                    <img src="src/assets/img/desktop/chronographe-automatique-desktop.webp"
                          alt="Chronographe automatique"
                          width="258"
                          height="350"
@@ -677,7 +688,7 @@
             <ul class="find-list">
                 <li>
                     <article aria-labelledby="find-store" class="find-card card">
-                        <img src="./src/img/desktop/trouver-boutique-desktop.webp" alt="Chronographe automatique"
+                        <img src="src/assets/img/desktop/trouver-boutique-desktop.webp" alt="Chronographe automatique"
                              width="1196"
                              height="800"
                              loading="lazy" decoding="async">
@@ -705,7 +716,7 @@
                 </li>
                 <li>
                     <article aria-labelledby="about-decorations" class="find-card card">
-                        <img src="./src/img/desktop/decorations-desktop.webp" alt="Chronographe automatique"
+                        <img src="src/assets/img/desktop/decorations-desktop.webp" alt="Chronographe automatique"
                              width="1221"
                              height="800"
                              loading="lazy" decoding="async">

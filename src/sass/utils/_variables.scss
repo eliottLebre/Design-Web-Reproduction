@@ -1,0 +1,75 @@
+@media screen and (max-width: 644px) {
+  :root {
+    --space-centred-second: 0px !important;
+  }
+}
+
+
+
+:root {
+  /*FONTS FAMILY*/
+  --font-porsche: 'Porsche Next TT', sans-serif;
+  --font-anton: 'Anton', sans-serif;
+
+  /*FONTS SIZES ADAPTATIVE*/
+  --fs-specs-animated: clamp(1.875rem, 1.025rem + 3.62vw, 5.375rem);
+  --fs-brand-name: clamp(4rem, 3.029rem + 4.14vw, 8rem);
+  --fs-second-brand-name: clamp(2.25rem, 1.34rem + 3.88vw, 6rem);
+
+  --fs-h1: clamp(1.875rem, 1.405rem + 2.01vw, 3.813rem);
+  --fs-h2: clamp(1.5rem, 1.121rem + 1.62vw, 3.063rem);
+  --fs-h3: clamp(1.5rem, 1.272rem + 0.97vw, 2.438rem);
+
+  /*FONTS TOUT EN UN*/
+  --typography-specs-animated: 400 var(--fs-specs-animated)/1 var(--font-porsche);
+  --typography-brand-name: 400 var(--fs-brand-name)/1 var(--font-anton);
+  --typography-second-brand-name: 400 var(--fs-second-brand-name)/1 var(--font-anton);
+
+  --typography-h1: 400 var(--fs-h1)/1.5 var(--font-porsche);
+  --typography-h2: 700 var(--fs-h2)/1.5 var(--font-porsche);
+  --typography-h3: 700 var(--fs-h3)/1.5 var(--font-porsche);
+
+  --typography-subtitle: 400 20px/1.5 var(--font-porsche);
+  --typography-body: 400 16px/1.5 var(--font-porsche);
+  --typography-body-bold: 700 16px/1.5 var(--font-porsche);
+  --typography-body-s: 400 14px/1.5 var(--font-porsche);
+
+
+  /*COULEURS & DEGRADE*/
+  --Background-primary: #FFFFFF;
+  --Background-secondary: #0E0E12;
+  --Background-fill: #EEEFF2;
+
+  --text-primary: #010205;
+  --text-secondary: #6B6D70;
+  --text-inverse: #FBFCFF;
+  --Text-illustration-header: #D8D8DB;
+
+  --gradiant-card: linear-gradient(to top, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0) 80%);
+  --gradiant-radial-card: radial-gradient(closest-side at 50% 35%, rgba(14, 14, 18, 0.7), rgb(14, 14, 18));
+  --gradiant-full-size-img: linear-gradient(to top, rgba(14, 14, 18, 1) 20%, rgba(14, 14, 18, 0));
+  --gradiant-cover-size-img: linear-gradient(to bottom, rgba(14, 14, 18, 1) 20%, rgba(14, 14, 18, 0));
+  --gradiant-header: linear-gradient(to bottom, rgba(216, 216, 219, 0), rgba(216, 216, 219, 1) 80%, rgba(216, 216, 219, 0) 80%);
+  --gradiant-net-transition-bg: linear-gradient(to bottom, rgba(14, 14, 18, 1) 70%, rgba(14, 14, 18, 0) 70%, rgba(255, 255, 255, 1) 70%);
+
+
+  /*ESPACE EN GRILLE DE 8PX*/
+  --space-centred: clamp(24px, 6.4vw, 160px);
+  --space-centred-second: clamp(0px, 6.771vw , 130px);
+
+  --space-xl: clamp(96px, 25.6vw, 160px);
+  --space-l: clamp(32px, 8.532vw, 64px);
+  --space-m: clamp(24px, 6.4vw, 32px);
+  --space-s: clamp(16px, 4.267vw, 24px);
+  --space-xs: clamp(0, .832vw, 16px);
+
+  --space-button-group: clamp(8, .832vw, 16px);
+  --space-button-inner-padding: 12px;
+  --space-brand-name-to-header: 24px;
+
+  --large-radius: 16px;
+  --tiny-radius: 4px;
+
+  --button-min-height: 48px;
+  --button-border-size: 2px;
+}
