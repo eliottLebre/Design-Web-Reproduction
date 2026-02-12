@@ -1,0 +1,15 @@
+.main__wrapper__section-about{
+  @include flex-column-center($justify: flex-start, $gap: #{$space-xs});
+  text-align: center;
+  &__p-reference{
+    background-color: var(--Background-fill);
+    border-radius: var(--tiny-radius);
+  }
+  &__container-buttons{
+    @include btn-group;
+    @include second-wrapper;
+  }
+  &__p{
+
+  }
+}

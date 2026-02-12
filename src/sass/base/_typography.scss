@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Porsche Next TT';
+  src: url('../../assets/polices/porsche-next.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Porsche Next TT';
+  src: url('../../assets/polices/porsche-next-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('../../assets/polices/Anton-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main__wrapper__section-about {
+  &__h1 {
+    font: var(--typography-h1);
+  }
+
+  &__p-price {
+    font: var(--typography-body-bold);
+  }
+
+  &__p-small {
+    &--secondary {
+      color: var(--text-secondary);
+    }
+
+    &--small {
+      font: var(--typography-body-s);
+    }
+  }
+}
+
+
+h2, h3 {
+  font: var(--typography-h2);
+}
+
+.header__brand-name {
+  font: var(--typography-brand-name);
+  text-transform: uppercase;
+  color: var(--Text-illustration-header);
+}
+
+.spec-item dd strong {
+  font: var(--typography-specs-animated);
+}
+
+.spec-item dd abbr {
+  font: var(--typography-h1);
+  text-decoration: none;
+}
+
+#history-content p {
+  font: var(--typography-subtitle);
+}

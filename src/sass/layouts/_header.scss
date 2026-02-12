@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+  margin-bottom: var(--space-xs);
+
+  &__brand-name {
+    position: absolute;
+    top: var(--space-brand-name-to-header);
+  }
+
+  &container-img {
+    width: 16%;
+    min-width: 150px;
+    aspect-ratio: 320/449;
+    z-index: 1;
+
+    &__img {
+      margin-bottom: var(--space-xs);
+      width: 100%;
+      min-width: 150px;
+      aspect-ratio: 320/449;
+      object-fit: cover;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 0;
+      width: 100vw;
+      min-height: 220px;
+      aspect-ratio: 1920/449;
+      background: var(--gradiant-header);
+      z-index: -1;
+    }
+  }
+
+  &__nav {
+    align-self: flex-start;
+    width: 100%;
+    padding-left: var(--space-s);
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: var(--space-xs);
+      overflow-x: auto;
+
+      &link {
+        white-space: nowrap;
+      }
+    }
+  }
+}
