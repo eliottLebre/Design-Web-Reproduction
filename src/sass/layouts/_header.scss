@@ -1,28 +1,20 @@
-.header {
+.site-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 72px;
   margin-bottom: var(--space-xs);
 
-  &__brand-name {
+  &__brand {
     position: absolute;
     top: var(--space-brand-name-to-header);
   }
 
-  &container-img {
+  &__visual {
     width: 16%;
     min-width: 150px;
     aspect-ratio: 320/449;
     z-index: 1;
-
-    &__img {
-      margin-bottom: var(--space-xs);
-      width: 100%;
-      min-width: 150px;
-      aspect-ratio: 320/449;
-      object-fit: cover;
-    }
 
     &:before {
       content: "";
@@ -35,23 +27,32 @@
       background: var(--gradiant-header);
       z-index: -1;
     }
+
+    &__image {
+      margin-bottom: var(--space-xs);
+      width: 100%;
+      min-width: 150px;
+      aspect-ratio: 320/449;
+      object-fit: cover;
+    }
   }
 
-  &__nav {
+  .site-nav {
     align-self: flex-start;
     width: 100%;
     padding-left: var(--space-s);
+    padding-right: var(--space-s);
 
-    &__links {
+    &__list {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: var(--space-xs);
       overflow-x: auto;
+    }
 
-      &link {
-        white-space: nowrap;
-      }
+    &__link {
+      white-space: nowrap;
     }
   }
 }
