@@ -8,15 +8,6 @@
   padding: 0 var(--space-centred-second);
 }
 
-@mixin btn-group {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-xs);
-  width: 100%;
-  &:not(:first-child) {
-    margin-top: var(--space-xs);
-  }
-}
 
 @mixin btn-theme($bg-color, $text-color, $border-color) {
   background-color: $bg-color;
