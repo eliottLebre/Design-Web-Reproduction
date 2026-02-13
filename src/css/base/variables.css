@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Porsche Next TT';
-    src: url('../../polices/porsche-next.ttf') format('truetype');
+    src: url('../../assets/polices/porsche-next.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Porsche Next TT';
-    src: url('../../polices/porsche-next-bold.ttf') format('truetype');
+    src: url('../../assets/polices/porsche-next-bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Anton';
-    src: url('../../polices/Anton-Regular.ttf') format('truetype');
+    src: url('../../assets/polices/Anton-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -59,6 +59,7 @@
     /*COULEURS & DEGRADE*/
     --Background-primary: #FFFFFF;
     --Background-secondary: #0E0E12;
+    --Background-fill: #EEEFF2;
 
     --text-primary: #010205;
     --text-secondary: #6B6D70;
@@ -87,8 +88,8 @@
     --space-button-inner-padding: 12px;
     --space-brand-name-to-header: 24px;
 
-    --card-radius: 16px;
-    --button-radius: 4px;
+    --large-radius: 16px;
+    --tiny-radius: 4px;
 
     --button-min-height: 48px;
     --button-border-size: 2px;

@@ -1,0 +1,53 @@
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+  margin-bottom: $space-xs;
+
+  &__brand {
+    position: absolute;
+    top: $space-brand-name-to-header;
+  }
+
+  &__visual {
+    width: 16%;
+    min-width: 150px;
+    aspect-ratio: 320/449;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 0;
+      width: 100vw;
+      min-height: 220px;
+      aspect-ratio: 1920/449;
+      background: $gradiant-header;
+      z-index: -1;
+    }
+  }
+
+  &__image {
+    margin-bottom: var(--space-xs);
+    width: 100%;
+    min-width: 150px;
+    aspect-ratio: 320/449;
+    object-fit: cover;
+  }
+
+  .site-nav {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: $space-xs;
+      overflow-x: auto;
+    }
+
+    &__link {
+      white-space: nowrap;
+    }
+  }
+}

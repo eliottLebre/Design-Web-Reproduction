@@ -1,0 +1,9 @@
+.l-container{
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+  padding: 0 $space-centred;
+  &--narrow{
+    padding: 0 $space-centred-second;
+  }
+}

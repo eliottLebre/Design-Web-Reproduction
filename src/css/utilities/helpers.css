@@ -12,7 +12,7 @@
 
 
 /* --- Skip Link --- */
-.skip-link {
+.skip-links__link {
     position: absolute;
     top: -9999px;
     left: 50%;
@@ -23,11 +23,12 @@
     z-index: 9999;
 }
 
-.skip-link:focus {
+.skip-links__link:focus {
     top: 0; /* Apparaît quand on tab dessus */
 }
 
 
+/*todo*/
 /* --- inverseur de colonne flex --- */
 .invert-flex-column {
     display: flex;

@@ -1,0 +1,33 @@
+.c-button {
+  @include flex-center($direction: row, $gap: #{inherit});
+  min-height: $button-min-height;
+  border-radius: $tiny-radius;
+  text-decoration: none;
+  padding: $space-button-group $space-s;
+  cursor: pointer;
+
+  &--primary {
+    @include btn-theme($background-secondary, $text-inverse, $text-primary);
+  }
+
+  &--secondary {
+    @include btn-theme(transparent, $text-primary, $background-secondary);
+  }
+
+  &--inverse {
+    @include btn-theme(transparent, $text-inverse, $text-inverse);
+  }
+
+  &--primary-inverse {
+    @include btn-theme($background-primary, $text-primary, $background-secondary);
+  }
+
+  &--primary-inverse-social {
+    @extend .c-button--primary-inverse;
+    width: 56px;
+  }
+
+  &__icon {
+    @include flex-center;
+  }
+}

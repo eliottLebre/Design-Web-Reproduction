@@ -33,3 +33,30 @@ header {
 .nav-collections a {
     white-space: nowrap;
 }
+
+#gradiant-header {
+    width: 16%;
+    min-width: 150px;
+    aspect-ratio: 320/449;
+    z-index: 1;
+}
+
+#gradiant-header:before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100vw;
+    min-height: 220px;
+    aspect-ratio: 1920/449;
+    background: var(--gradiant-header);
+    z-index: -1;
+}
+
+#gradiant-header img {
+    margin-bottom: var(--space-xs);
+    width: 100%;
+    min-width: 150px;
+    aspect-ratio: 320/449;
+    object-fit: cover;
+}

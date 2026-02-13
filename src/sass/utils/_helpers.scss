@@ -1,0 +1,27 @@
+/*SKIP LINKS*/
+.skip-link__anchor {
+  position: absolute;
+  top: -9999px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $background-secondary;
+  color: $text-inverse;
+  padding: $space-s;
+  z-index: 9999;
+  &:focus{
+    top: 0; /* Apparaît quand on tab dessus */
+  }
+}
+
+
+.u-visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

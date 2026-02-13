@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Porsche Next TT';
+  src: url('../assets/polices/porsche-next.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Porsche Next TT';
+  src: url('../assets/polices/porsche-next-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('../assets/polices/Anton-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.site-header__brand{
+  font: $typography-brand-name;
+  text-transform: uppercase;
+  color: $Text-illustration-header;
+}
+.product-intro{
+  &__title{
+    font: $typography-h1;
+  }
+  &__reference{
+    display: inline-block;
+    padding: 0px 6px;
+    background-color: $background-fill;
+    border-radius: $tiny-radius;
+  }
+  &__price{
+    font: $typography-body-bold;
+  }
+  &__description{
+    font: $typography-body-s;
+    color: $text-secondary;
+  }
+}
+
+.tech-specs{
+  &__term{
+    color: var(--text-secondary);
+  }
+  &__definition{
+
+  }
+}
+
+
+
+h2, h3 {
+  font: $typography-h2;
+}
+
+.header__brand-name {
+  font: $typography-brand-name;
+  text-transform: uppercase;
+  color: $Text-illustration-header;
+}
+
+.spec-item dd strong {
+  font: $typography-specs-animated;
+}
+
+.spec-item dd abbr {
+  font: $typography-h1;
+  text-decoration: none;
+}
+
+#history-content p {
+  font: $typography-subtitle;
+}
