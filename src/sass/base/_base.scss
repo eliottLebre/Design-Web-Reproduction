@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+
+  &__container {
+    @include wrapper;
+
+  }
+}
+
+a {
+  color: $text-primary;
+  text-decoration: none;
+}

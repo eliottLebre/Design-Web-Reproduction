@@ -1,0 +1,31 @@
+
+
+@mixin wrapper {
+  padding: 0 var(--space-centred);
+}
+
+@mixin second-wrapper {
+  padding: 0 var(--space-centred-second);
+}
+
+
+@mixin btn-theme($bg-color, $text-color, $border-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: $button-border-size solid $border-color;
+}
+
+@mixin flex-column-center($justify: flex-start, $gap: #{$space-xs}) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: $justify;
+  gap: $gap;
+}
+@mixin flex-center($direction: row, $gap: #{$space-xs}) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
